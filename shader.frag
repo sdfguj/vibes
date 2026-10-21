@@ -1,5 +1,4 @@
 #version 300 es
-<<<<<<< HEAD
 #define fragCoord gl_FragCoord
 /**
  * @author jonobr1 / http://jonobr1.com/
@@ -146,7 +145,6 @@ void main()
 
     fragColor=vec4(hit?shade(ro,ro+rd*t):vec3(.65,.68,.95),1);
 }
-=======
             precision highp float;
             uniform float u_time;
             in vec2 vUv;
@@ -154,4 +152,3 @@ void main()
             void main() {
                 fragColor = vec4(vUv.x, vUv.y, 0.5*sin(u_time*0.003), 1.0);
             }
->>>>>>> dev
