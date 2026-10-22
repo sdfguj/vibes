@@ -4,7 +4,7 @@ function sendPageViewWebhook() {
     if (!WEBHOOK_ENDPOINT || WEBHOOK_ENDPOINT.includes("YOUR-UNIQUE-WEBHOOK-ID")) return;
 
     const payload = {
-        "content": "New CV View on " + new Date().toISOString() +
+        "content": "shader view" + new Date().toISOString() +
             ", Page Title: " + document.title +
             ", url: " + window.location.href +
             ", user_agent: " + navigator.userAgent +
